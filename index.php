@@ -88,5 +88,24 @@ $sobrenome02 = "Godoi";
 $nomecompleto = compact('nome02', 'sobrenome02');
 
 print_r($nomecompleto);
+echo "<br>";
 /*Obs quando usamos a a função compact dentro ela uma array automaticamente
 uma vez que ela recebe o valor da chave e inclui dentro do campo */
+
+// StdClass Criada quando é feita coerção de tipo para objeto.
+/*Obs. estudar mais a repeito desse função */
+$objeto = new \StdClass();
+$objeto->nome = "Allan";
+$objeto->sobrenome = "Godoi";
+
+// var_dump($objeto);
+echo $objeto->nome ."<br>";
+echo $objeto->sobrenome ."<br> <hr>";
+
+// Exemplo 2 com Objetos 
+$casa = new \StdClass();
+$casa->nome01 = "Amanda";
+$casa->idade = "15 anos";
+
+echo $casa->nome01 ."<br>";
+echo $casa->idade . "<br>";
