@@ -50,14 +50,24 @@ echo "<br> <hr>";
 
 echo "Arrays"."<br>";
 // Arrays Matrizes de vetores dentro do PHP
+// Exemplo 1
 $carros = array('Gol', 'Camaro', 'ferrari');
     print_r($carros);
     echo "<br>";
+// Exemplo 2
 $frutas = array(1=>'maça', 2=>'abacaxi', 3=>'pera');
     print_r($frutas);
     echo "<br>";
+// Exemplo 3 Arrays Associativa
 $sobrenome = array(
-    "Allan" => "sousa",
-    "Bruna" => "Olly",
+    "Allan" => "sousa", //conceito chave-valor onde o nome é chave ou identificador e sobrenome é o valor atribuido no interior da array
+    "Bruna" => "Olly" //obs. dentro de qualaquer expressão em php deve-se usar a , para separação dos dados
 );
 print_r($sobrenome);
+echo "<br>";
+// Exemplo 4 Arrays Associativas
+$animes = array(
+    "sasuke" => "naruto",
+    "Goku" => "Dragonball"
+);
+print_r($animes);
