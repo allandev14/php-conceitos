@@ -41,3 +41,11 @@ if($formado == !true){
 }
 /*Nesse caso não temos um endif para finalizar o looping, e aprece um novo 
 elseif onde há uma mensagem de negação caso não haja uma devolutiva verdadeira*/
+echo "<br>";
+
+$cachorro = "Vira-lata";
+$gato = "Perça";
+
+$animais = ($gato != "Vira-lata") ? "Perça" : $cachorro;
+
+echo $animais;
