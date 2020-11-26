@@ -28,3 +28,20 @@ echo "<br> <hr>";
 for($i = 20; $i <= 25; $i++) {
     echo "O número atual é igual há : $i <br>";
 }
+
+echo "<br> <hr>";
+
+//Obs os loops podem ser realizados com qualquer variável seguindo o padrão já existentes 
+
+//  While
+/*
+Ele dirá ao PHP para executar as declarações aninhadas repetidamente, 
+enquanto a expressão do while forem avaliadas como TRUE.
+*/
+
+$ab = 0; //Obs no caso do while a variável precisa ser declada antes do loop
+
+while ($ab <= 7) {
+    echo "O número atual é igual há : $ab <br>";
+    $ab++;
+}
