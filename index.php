@@ -109,3 +109,21 @@ $casa->idade = "15 anos";
 
 echo $casa->nome01 ."<br>";
 echo $casa->idade . "<br>";
+
+/*echo gettype($test);  o atributo gettype mostra o tipo de qualquer tipo de variável dentro 
+do trecho de codigo em que ele se encontra*/ 
+echo "<br>";
+
+// Concatenação com gettype
+$nome03 = "Allan Sousa";
+$idade03 = 26;
+$altura03 = 1.85;
+$formacao = array("S.I", "App Web");
+$TI = new \StdClass();
+
+echo '$nome03: ' .gettype($nome03). '<br>';
+echo '$idade03: ' .gettype($idade03). '<br>';
+echo '$altura03:' .gettype($altura03). '<br>';
+echo '$formacao03: ' .gettype($formacao). '<br>';
+echo '$TI: ' .gettype($TI). '<br>';
+
