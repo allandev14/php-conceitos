@@ -56,3 +56,8 @@ $carros = array('Gol', 'Camaro', 'ferrari');
 $frutas = array(1=>'maça', 2=>'abacaxi', 3=>'pera');
     print_r($frutas);
     echo "<br>";
+$sobrenome = array(
+    "Allan" => "sousa",
+    "Bruna" => "Olly",
+);
+print_r($sobrenome);
