@@ -41,11 +41,36 @@ if($formado == !true){
 }
 /*Nesse caso não temos um endif para finalizar o looping, e aprece um novo 
 elseif onde há uma mensagem de negação caso não haja uma devolutiva verdadeira*/
-echo "<br>";
+echo "<br> <hr>";
 
+echo "Ternários <br>";
 $cachorro = "Vira-lata";
 $gato = "Perça";
 
-$animais = ($gato != "Vira-lata") ? "Perça" : $cachorro;
+$animais = ($gato != 'Vira-lata') ? 'Perça' : 'cachorro';
 
-echo $animais;
+echo "{$animais} <br> <br>";
+
+/*Obs. olhar depois mais a respeito de ternários PHP */
+
+$_POST = array(
+    'nome'=> 'Allan Sousa',
+    'sobrenome'=> null
+);
+
+$nome = '';
+$sobrenome = '';
+
+if($_POST['nome'] <> null ) {
+    $nome = $_POST['nome'];
+}else {
+    $nome = 'não preenchido';
+}
+if($_POST['sobrenome'] <> null) {
+    $sobrenome = $_POST['sobrenome'];
+}else {
+    $sobrenome = 'não preenchido';
+}
+
+echo "{$nome} <br>";
+echo "{$sobrenome}";
