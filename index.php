@@ -71,3 +71,10 @@ $animes = array(
     "Goku" => "Dragonball"
 );
 print_r($animes);
+echo "<br>";
+// Exemplo 05
+$idade = array(
+    "Mônica" => 21,
+    "Anderson" => 45
+);
+echo ($idade ['Mônica']);
