@@ -68,3 +68,23 @@ do {
     echo "O número escrito é $abc <br>";
     $abc++;
 } while($abc <= 15);
+
+echo "<br> <hr>";
+
+// Foreach
+// O construtor foreach fornece uma maneira fácil de iterar sobre arrays. 
+
+$cores = ['vermelho', 'azul', 'verde', 'amarelo', 'cinza', 'preto'];
+
+foreach($cores as $cor) { // nesse caso o valor pode ser diferente mas deve ser indicado no echo que será impresso abaixo
+    echo "A cor é atual é {$cor} <br>";
+}
+echo "<br> <hr>";
+// foreach exemplo 2 
+$numeros01 = ['10','11','12','14','15'];
+
+foreach($numeros01 as $numero05) {
+    echo "O número gerado é {$numero05} <br>";
+
+}
+
