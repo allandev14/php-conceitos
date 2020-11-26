@@ -79,3 +79,14 @@ $idade = array(
 );
 echo ($idade ['Mônica']); /*Obs nesse caso o echo foi ultilizado para o envio das informações na tela
  dentro do () foram inseridas a variável declada e entre [] o nome da chave dentro da array associativa*/
+echo "<br>";
+
+// Exemplo 06 Função compact
+$nome02 = "Allan";
+$sobrenome02 = "Godoi";
+
+$nomecompleto = compact('nome02', 'sobrenome02');
+
+print_r($nomecompleto);
+/*Obs quando usamos a a função compact dentro ela uma array automaticamente
+uma vez que ela recebe o valor da chave e inclui dentro do campo */
