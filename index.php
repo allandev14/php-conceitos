@@ -72,9 +72,10 @@ $animes = array(
 );
 print_r($animes);
 echo "<br>";
-// Exemplo 05
+// Exemplo 05 Com extração de dados dentro do array
 $idade = array(
     "Mônica" => 21,
     "Anderson" => 45
 );
-echo ($idade ['Mônica']);
+echo ($idade ['Mônica']); /*Obs nesse caso o echo foi ultilizado para o envio das informações na tela
+ dentro do () foram inseridas a variável declada e entre [] o nome da chave dentro da array associativa*/
