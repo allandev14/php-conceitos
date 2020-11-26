@@ -45,3 +45,26 @@ while ($ab <= 7) {
     echo "O número atual é igual há : $ab <br>";
     $ab++;
 }
+
+echo "<br> <hr>";
+
+// Do while
+/* 
+A maior diferença para o laço while é que a primeira iteração
+do laço do-while sempre é executada (a expressão de avaliação é 
+executada somente no final da iteração)
+*/
+    $a1 = 0;
+do {
+    echo "O número atual é igual há : {$a1} <br>";
+    $a1++;
+} while($a1 <= 5);
+echo "<br> <hr>";
+
+// Exemplo 2 do while
+
+$abc = 12;
+do {
+    echo "O número escrito é $abc <br>";
+    $abc++;
+} while($abc <= 15);
