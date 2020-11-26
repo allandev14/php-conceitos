@@ -80,4 +80,15 @@ $nome = $_POST['nome'] ?? 'não preenchido';
 $sobrenome = $_POST['sobrenome'] ?? 'não preenchido';
 
 echo "{$nome} <br>";
-echo "{$sobrenome} <br>";
+echo "{$sobrenome} <br> <hr>";
+
+// Exemplo 2 com $_POST
+
+$primeiro = null;
+$segundo  = 'Tudo Ok'; //Nesse caso o segundo item foi verificado e será impresso na tela
+$terceiro = null;
+$quarto = null;
+
+$resultado = $primeiro ?? $segundo ?? $$terceiro ?? $quarto ?? 'não preenchido'; // Mensagem caso nenhum dos campos esteja preenchido
+
+echo $resultado;
