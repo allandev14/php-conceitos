@@ -32,5 +32,7 @@ $nome01 = "Andressa". "<br>"; // string
 $idade01 = "23". "<br>"; // int / integer
 $altura = "1.65". "<br>"; // float / double
 $mulher = true . "<br>"; // boolean
-$cursos = array('PHP', 'LARAVEL', 'MYSQL'). "<br>"; //array matriz de vetor dentro da sintaxe php
-$cursos01 = array['PHP', 'LARAVEL', 'MYSQL']. "<br>"; //Outra forma de inserir arrays dentro do código
+// $cursos = array('PHP', 'LARAVEL', 'MYSQL'). "<br>"; //array matriz de vetor dentro da sintaxe php
+    // print_r($cursos). "<br>";
+// $cursos01 = ["PHP", "LARAVEL", "MYSQL"]. "<br>"; //Outra forma de inserir arrays dentro do código
+    // echo $cursos01;
