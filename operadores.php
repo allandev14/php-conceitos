@@ -60,7 +60,7 @@ $_POST = array(
 
 $nome = '';
 $sobrenome = '';
-
+/*
 if($_POST['nome'] <> null ) {
     $nome = $_POST['nome'];
 }else {
@@ -74,3 +74,10 @@ if($_POST['sobrenome'] <> null) {
 
 echo "{$nome} <br>";
 echo "{$sobrenome}";
+*/
+
+$nome = $_POST['nome'] ?? 'não preenchido';
+$sobrenome = $_POST['sobrenome'] ?? 'não preenchido';
+
+echo "{$nome} <br>";
+echo "{$sobrenome} <br>";
