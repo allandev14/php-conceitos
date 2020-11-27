@@ -1,7 +1,21 @@
 <?php
 
-// Functions Anonimas
+// Functions Anonimas com Lampida
 
+$filtro = ['nome1' => 'Julia', 'nome2' => 'Maria'];
+
+$nomes = ['Julia','Maria','Afonso','Pedro'];
+
+$resultado = array_filter($nomes, function($valor) use ($filtro)
+{
+    return ($valor === $filtro['nome1']) || ($valor === $filtro['nome2']);
+});
+
+var_dump($resultado);
+
+// Function anonima sem a variável $filter
+
+/*
 $nomes = ['Julia','Maria','Afonso','Pedro'];
 
 $resultado = array_filter($nomes, function($valor)
@@ -10,4 +24,4 @@ $resultado = array_filter($nomes, function($valor)
 });
 
 var_dump($resultado);
-// print_r($resultado);
+*/
