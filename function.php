@@ -33,7 +33,7 @@ echo "<br>";
 */
 // Exemplo 2 com dump and die
 
-function dd($personagens) {
+/*function dd($personagens) {
     echo "<pre>";
     print_r($personagens);
     echo "</pre>";
@@ -45,4 +45,17 @@ $animes = ['naruto','sasuke','itachi'];
 
 
 dd($animes);
+echo "<br>";
+*/
 // Obs por enquanto a dump and die, só reflete um looping por vez
+
+$resultado = mostrarIdade(26);
+
+echo $resultado;
+
+function mostrarIdade(int $idade) : int
+{
+    //echo "Sua idade atual é {$idade}"; Comando para realizar a impressão na tela
+    // return "Sua idade é {$idade}";
+    return $idade;
+}
