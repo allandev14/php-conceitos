@@ -52,8 +52,17 @@ $nome3 = substr($mensagem, -4); //nesse caso ele irá retirar todo conteúdo ini
 echo $nome3;
 echo "<br>";
 */
+
+/*
 $mensagem = "Olá meu nome é Allan";
 $nome3 = substr($mensagem,0, 2); //nesse caso ele irá retirar todo conteúdo inicial deixanod apenas os duas primeiras posições declaradas
+
+echo $nome3;
+echo "<br>";
+*/
+
+$mensagem = "Olá meu nome é Allan";
+$nome3 = substr($mensagem, 15, 5); //nesse caso ele irá retirar todo conteúdo inicial começando pela 15 posição, mostrando apenas as últimas 5 posições.
 
 echo $nome3;
 echo "<br>";
