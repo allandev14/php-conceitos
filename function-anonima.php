@@ -2,13 +2,13 @@
 
 // Functions Anonimas com Lampida
 
-$filtro = ['nome1' => 'Julia', 'nome2' => 'Maria'];
+$filtro = ['nome1' => 'Julia','nome2' => 'Maria']; // Nesse caso os nomes de atribuição e variáveis precisão ser separadas 
 
-$nomes = ['Julia','Maria','Afonso','Pedro'];
+$nomes = ['Julia','Maria','Afonso','Pedro']; // array
 
-$resultado = array_filter($nomes, function($valor) use ($filtro)
+$resultado = array_filter($nomes, function($valor) use ($filtro) // Use nesse caso é utilizado para atribuir uma variável que não está na function anonima 
 {
-    return ($valor === $filtro['nome1']) || ($valor === $filtro['nome2']);
+    return ($valor === $filtro['nome1']) || ($valor === $filtro['nome2']); // nesse caso o variável vem antes do filtro e depois temos o valor da variável
 });
 
 var_dump($resultado);
