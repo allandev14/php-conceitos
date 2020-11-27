@@ -66,3 +66,9 @@ $nome3 = substr($mensagem, 15, 5); //nesse caso ele irá retirar todo conteúdo 
 
 echo $nome3;
 echo "<br>";
+
+echo substr("Olá, mundo",0,2); // Nesse caso ele deixou apenas as ultimas duas posicoes
+echo "<br>";
+
+echo substr("Agora ele está contando de trás para frente",-30,15); // Nesse caso ele está contando de trás para frente
+
