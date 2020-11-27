@@ -106,4 +106,4 @@ echo "{$objeto1->Bernardo} <br>";
 $contagem ='{"Juliana":"Juliana está no 8° ano", "Patrc":"Está cursando faculdade"}';
 $status = json_decode($contagem, JSON_UNESCAPED_UNICODE, true); //função decodificar uma parte especifica do código, e nesse caso com a afirmação de true no final temos a formação de uma array
 var_dump($status);
-echo "<br>";
+echo "<br> <hr>";
