@@ -18,4 +18,31 @@ echo (rand(0,25). "<br>"); //gera números aleatóros de nesse de caso de 0 até
 
 $nomesfemininos = ['Amanda','Beatriz','Odete'];
 echo count($nomesfemininos);
-echo "<br>";
+echo "<br> <hr>";
+
+// ceil
+//a função ciel gera o arredondamento sempre para cima
+
+echo (ceil(0.45) ."<br>"); //arrendondamento para 1 
+echo (ceil(1.23) ."<br>"); //arredondamento para 2
+echo (ceil(5.33). "<br> <hr>"); //arredondamento para 6
+
+// round
+// Função round gera o arredondamento 
+echo (round(3.23). "<br>"); //arrendondamento para 3
+echo (round(5.77). "<br>"); //arredondamento para 6
+echo (round(10.99). "<br>"); // arradondamento para 11
+
+// strlen
+// Conta quantos caracteres exitem dentro do valor da variável
+$primeironome = "Allan";
+echo strlen($primeironome)."<br>";
+
+$apelido = "Joao Carlos";
+$novonome =str_replace('Joao','Junvenil',$apelido); // Exite a necesidade de serem dois argumentos antes variável
+
+echo $apelido ."<br>";
+echo $novonome . "<br>";
+
+
+
