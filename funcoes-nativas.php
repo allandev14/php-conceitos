@@ -71,4 +71,39 @@ echo substr("Olá, mundo",0,2); // Nesse caso ele deixou apenas as ultimas duas 
 echo "<br>";
 
 echo substr("Agora ele está contando de trás para frente",-30,15); // Nesse caso ele está contando de trás para frente
+echo "<br>";
 
+// Continuação ....
+// Estudo com Json
+
+$idades = [
+    'Amanda' => 13,
+    'Juila' => 16  
+];
+
+$json = json_encode($idades); //função para decodificar ou consumir no caso de apis código
+// var_dump($json);
+echo "{$json} <br>";
+
+// Exemplo 2
+
+$sobrenomes = [
+    'Carlos' => 'Carlos nasceu em 2002 <br>', 
+    'Bernardo' => 'Bernardo é uma bênção'
+];
+
+$json1 = json_encode($sobrenomes, JSON_UNESCAPED_UNICODE); // função para acrescentrar acentuação dentro do codigo
+echo "{$json1} <br>";
+echo "<br>";
+
+// Exemplo 3
+
+$json3 = '{"Carlos":"Carlos nasceu em 2002","Bernardo":"Bernardo é uma bênção"}';
+$objeto1 = json_decode($json3);
+echo "{$objeto1->Bernardo} <br>"; 
+// Exemplo 4
+
+$contagem ='{"Juliana":"Juliana está no 8° ano", "Patrc":"Está cursando faculdade"}';
+$status = json_decode($contagem, JSON_UNESCAPED_UNICODE, true); //função decodificar uma parte especifica do código, e nesse caso com a afirmação de true no final temos a formação de uma array
+var_dump($status);
+echo "<br> <hr>";
